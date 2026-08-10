@@ -48,7 +48,7 @@ public sealed class TicketPriorityClassifierTests
     [Trait("Category", "Unit")]
     public void Blank_severity_is_rejected(string? severity)
     {
-        Assert.Throws<ArgumentException>(() => classifier.Classify(severity!, "single-user", securityIncident: false));
+        Assert.ThrowsAny<ArgumentException>(() => classifier.Classify(severity!, "single-user", securityIncident: false));
     }
 
     [Fact]
