@@ -5,6 +5,9 @@
 
 # --- OS ---
 .DS_Store
+bin/
+obj/
+TestResults/
 Thumbs.db
 
 # --- Editors ---
