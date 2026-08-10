@@ -2,9 +2,10 @@
 
 ## Boundary
 
-This consumer contains one SDK-style .NET 8 project. Domain code is under
-`src/Domain/`; deterministic tests are grouped under `tests/Unit`,
-`tests/Integration`, and `tests/E2E`.
+This consumer contains an SDK-style .NET 8 class library at
+`src/Domain/TemplateDotnetPilot.csproj` and a separate xUnit test project at
+`tests/TemplateDotnetPilot.Tests/`. Test source remains grouped under
+`tests/unit`, `tests/integration`, and `tests/e2e`.
 
 ## Data flow
 

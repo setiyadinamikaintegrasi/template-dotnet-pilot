@@ -21,7 +21,9 @@ service depends on the template.
 
 ## Scope
 
-- Deterministic ticket-priority domain logic.
+- Deterministic ticket-priority domain logic in a .NET class library.
+- A separate xUnit test project that exercises the library through unit,
+  integration, and E2E categories.
 - Unit, integration, E2E, coverage, quality, build, and hosted security checks.
 - Build artifact and post-merge provenance evidence.
 

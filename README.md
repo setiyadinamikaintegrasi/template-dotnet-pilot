@@ -46,9 +46,10 @@ cd YOUR-REPO
 ## Domain behavior
 
 `TicketPriorityClassifier` converts severity, customer impact, and security
-incident status into priorities `P1` through `P4`. The tests cover validation,
-normalization, category-specific journeys, and the complete deterministic
-classification flow.
+incident status into priorities `P1` through `P4`. The production code lives in
+the `TemplateDotnetPilot` library project, while the xUnit tests live in the
+separate `TemplateDotnetPilot.Tests` project so hosted coverage can instrument
+the referenced domain assembly.
 
 ## Pilot boundary
 

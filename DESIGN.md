@@ -10,7 +10,8 @@ coverage output, and a Release artifact.
 
 ## Decision
 
-Implement a framework-free `TicketPriorityClassifier` on .NET 8. It accepts
+Implement a framework-free .NET 8 class library containing a
+`TicketPriorityClassifier`, plus a separate xUnit test project. The classifier accepts
 severity, customer impact, and a security-incident flag and returns `P1`,
 `P2`, `P3`, or `P4`.
 
@@ -36,6 +37,8 @@ severity, customer impact, and a security-incident flag and returns `P1`,
 
 - The repository is created from the published template, not copied selectively.
 - `scripts/detect-stack.sh` reports `dotnet`.
+- The solution contains separate production and test projects so coverage can
+  instrument the referenced production assembly.
 - Local `make ci` and `make docs-check` pass before the consumer PR.
 - Hosted .NET quality, categorized tests, coverage, and build jobs pass.
 - Blocking security and governance checks pass without policy weakening.
